@@ -21,9 +21,4 @@ public class debugScript : MonoBehaviour {
         //gameObject.GetComponent<Text>().text = T.text;
 
     }
-
-    private void Useless()
-    {
-        //this function does nothing, is just for testing github
-    }
 }
