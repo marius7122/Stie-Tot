@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <question>
+    <q>Cine a pictat Gioconda?</q>
+    <r1>Michelangelo</r1>
+    <r2>Moise</r2>
+    <r3>Da Vinci</r3>
+    <r4>Picasso</r4>
+    <corect>3</corect>
+  </question>
+
+  <question>
+    <q>Cand a fost pictata Gioconda?</q>
+    <r1>1503</r1>
+    <r2>1400</r2>
+    <r3>1354</r3>
+    <r4>1860</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Cum mai se numeste Gioconda?</q>
+    <r1>Femeie stand</r1>
+    <r2>Lisa</r2>
+    <r3>Mona Lisa</r3>
+    <r4>Renasterea</r4>
+    <corect>3</corect>
+  </question>
+
+  <question>
+    <q>Cine a pictat "Femeie Plangand"?</q>
+    <r1>Da Vinci</r1>
+    <r2>Vichelangelo</r2>
+    <r3>Picasso</r3>
+    <r4>Grigorescu</r4>
+    <corect>3</corect>
+  </question>
+
+  <question>
+    <q>Cand a fost pictata "Femeie plangand"?</q>
+    <r1>1937</r1>
+    <r2>1617</r2>
+    <r3>1868</r3>
+    <r4>1325</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Cum a fost pictata "Femeie plangand"?</q>
+    <r1>in acuarele</r1>
+    <r2>cu pensula subtire</r2>
+    <r3>in ulei</r3>
+    <r4>pe sticla</r4>
+    <corect>3</corect>
+  </question>
+
+  <question>
+    <q>Carui stil apartine "Femeie plangand"?</q>
+    <r1>Modernist</r1>
+    <r2>Clasicist</r2>
+    <r3>Renascentist</r3>
+    <r4>Cubist</r4>
+    <corect>4</corect>
+  </question>
+
+  <question>
+    <q>In ce perioada a fost pictata "Gioconda"?</q>
+    <r1>Modernista</r1>
+    <r2>Renascentista</r2>
+    <r3>Post Renascentista</r3>
+    <r4>Post Modernista</r4>
+    <corect>2</corect>
+  </question>
+
+  <question>
+    <q>Cine a pictat "Carul cu boi"?</q>
+    <r1>Nicolae Grigorescu</r1>
+    <r2>Eratostene</r2>
+    <r3>Da Vinci</r3>
+    <r4>Picasso</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Cand a fost pictata "Carul cu boi"?</q>
+    <r1>1789</r1>
+    <r2>1899</r2>
+    <r3>1685</r3>
+    <r4>1973</r4>
+    <corect>2</corect>
+  </question>
+
+  <question>
+    <q>Cine a pictat "Cina cea de taina"?</q>
+    <r1>Picasso</r1>
+    <r2>Da Vinci</r2>
+    <r3>Graize</r3>
+    <r4>Ludovico</r4>
+    <corect>2</corect>
+  </question>
+
+  <question>
+    <q>Cand a fost pictata "Cina cea de taina"?</q>
+    <r1>1495</r1>
+    <r2>1300</r2>
+    <r3>1535</r3>
+    <r4>1420</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Carei perioade apartine "Cina cea de taina"?</q>
+    <r1>Renascentista</r1>
+    <r2>Modernisma</r2>
+    <r3>Clasicista</r3>
+    <r4>Post Belica</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Cine a pictat "Noapte instelata"?</q>
+    <r1>Da Vinci</r1>
+    <r2>Vincent van Gogh</r2>
+    <r3>Grigorescu</r3>
+    <r4>Edverd Munch</r4>
+    <corect>2</corect>
+  </question>
+
+  <question>
+    <q>Cand a fost pictata "Noapte instelata"?</q>
+    <r1>1889</r1>
+    <r2>1365</r2>
+    <r3>1588</r3>
+    <r4>1853</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>Carei perioade apartine "Noapte instelata"?</q>
+    <r1>Postmodernism</r1>
+    <r2>Postimpresionism</r2>
+    <r3>Modernism</r3>
+    <r4>Impresionism</r4>
+    <corect>1</corect>
+  </question>
+
+  <question>
+    <q>cand?</q>
+    <r1>nu</r1>
+    <r2>nu</r2>
+    <r3>nu</r3>
+    <r4>da</r4>
+    <corect>4</corect>
+  </question>
+
+</ArrayOfQuestion>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <list>
+    <Item>
+      <titlu>Gioconda</titlu>
+      <an>1503</an>
+      <autor>Leonardo Da'Vinci</autor>
+      <detalii>Este vorba de o pictură în ulei pe lemn de plop cu dimensiunea de 77 x 53 cm. Natura imaginii redate a făcut subiectul a nenumărate interpretări. În general, se poate spune că vivacitatea și ambiguitatea fizionomiei Giocondei se datorează procedeului de pictură „sfumato”, dând tabloului un aer misterios. Caracteristica principală a portretului este surâsul enigmatic. Sigmund Freud a interpretat acest surâs ca simbol al atracției erotice a lui Leonardo față de mama sa (Complex Oedip). Identitatea personajului portretizat nu este încă sigură, deși recent cercetătorul Giuseppe Pallanti din Florența tinde să confirme afirmația lui Giorgio Vasari, după care ar fi vorba de Monna Lisa Gherardini, membră a micii nobilimi rurale din Toscana. Cercetări anterioare ajunseseră la concluzia că portretul ar reda figura unei înstărite doamne florentine, Madonna Lisa del Giocondo, al cărei nume ar explica și a doua denumire a tabloului.</detalii>
+    </Item>
+
+    <Item>
+      <titlu>Carul cu boi</titlu>
+      <an>1899</an>
+      <autor>Nicolae Grigorescu</autor>
+      <detalii>Pictura „Car cu boi”, realizată în anul 1897, atunci când Grigorescu se afla deja în plină maturitate artistică, se află inclusă în expoziția de bază a Muzeului memorial „Nicolae Grigorescu” din Câmpina.
+Tema carului cu boi ocupă un loc central în opera grigoresciană:dintr-un total de aproape 3.000 de lucrări, ce includ și partea de grafică, ea însumează aproximativ 300 de reprezentări sub diferite forme. Pictată în ulei pe lemn, având dimensiuni medii, de 24/44 centimetri, tabloul este semnat jos, în dreapta, cu roșu, cu numele autorului, alături de care se regăsește anul execuției, sub forma ultimelor două cifre (18)97. Un peisaj colinar, plin de vegetație, este întretăiat de un drum de pământ. În prim plan, dispus ușor oblic față de privitor, un car tras de doi boi pare că înaintează dincolo de marginile lucrării. În urma lui se pierd în zare alte care cu boi. Pensulația este una largă, cu tonalități calde, specifice unei zile de vară. Cromatic, predomină nuanțele de verde, diluate cu tonalități de galben și alb, cărora li se adaugă brunurile.</detalii>
+    </Item>
+
+    <Item>
+      <titlu>Cina cea de taina</titlu>
+      <an>1495</an>
+      <autor>Leonardo Da Vinci</autor>
+      <detalii>Cina cea de taină (în italiană Il Cenacolo sau La Ultima Cena) este o pictură murală a lui Leonardo da Vinci, realizată pentru patronul său, ducele Ludovico Sforza din Milano, una din cele mai celebre picturi din istoria universală a artelor, se găsește în fosta sală de mese a bisericii dominicane Santa Maria delle Grazie din Milano.
+        Lucrarea măsoară 460 x 880 cm și a fost executată în tempera și ulei, aplicate pe un strat dublu de ipsos, în perioada cuprinsă între 1494 și 1497. Pictura reprezintă scena biblică a Ultimei Cine a lui Isus Cristos, așa cum este descrisă în Evanghelia după Ioan (13:21), redând reacțiile diferite ale apostolilor săi, după ce Isus anunțase că unul dintre discipolii săi îl va trăda. Forma definitivă a fost precedată de studii amănunțite, schițele corespunzătoare s-au păstrat și se găsesc în Muzeul Albertina din Viena, la "Accademia" din Veneția și în "Royal Library" din castelul Windsor.
+
+
+      </detalii>
+    </Item>
+
+    <Item>
+      <titlu>Noapte înstelată</titlu>
+      <an>1889</an>
+      <autor> Vincent van Gogh </autor>
+      <detalii>Aceasta lucrare celebra a lui Van Gogh apartine perioadei in care acesta se afla in azilul din Saint Remy si reprezinta o demonstratie impresionanata a modului unic de perceptie si interpretare a naturii de catre un artist care a stiut sa isi proiecteze sentimentele asupra lucrurilor din jurul sau. In aceasta perioada, Van Gogh isi pierduse credinta, dar scria ca mai simte "o groaznica nevoie de - oare pot spune cuvantul - religie. Si atunci mi se intampla sa ies noaptea sa pictez stele. "</detalii>
+    </Item>
+
+    <Item>
+      <titlu>Femeie plangand</titlu>
+      <an>1948</an>
+      <autor> Pablo Picasso </autor>
+      <detalii>In 1948, artistul se intereseaza de un nou mediu artistic, ceramica. In 1954, o intalneste pe Jacqueline Roque, cu care se casatoreste in 1955, dupa moartea Olgai. Se dedica un timp reinterpretarii lucrarilor marilor maestri, cum ar fi Pranzul pe iarba al lui Manet sau Femei din Alger al lui Delacroix. Picasso se stabileste in 1961 la Mougins impreuna cu Jacqueline Roque. Pictorul moare la 8 aprilie 1973 la varsta de 91 ani in urma unei embolii pulmonare.</detalii>
+    </Item>
+
+  </list>
+</Items>
