@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class globalButtonManager : MonoBehaviour {
 
-    private void OnLevelWasLoaded(int level)
+    /*private void OnLevelWasLoaded(int level)
     {
         if(level == 0)  //main menu
         {
-            StartCoroutine(libInstanceManager.fixUnityBug("background"));
+            //StartCoroutine(libInstanceManager.fixUnityBug("background"));
 
-            Debug.Log("level 0 la putere");
+            //Debug.Log("level 0 la putere");
 
         }
-    }
+    }*/
 
     public void loadMainMenu()
     {
@@ -38,5 +38,10 @@ public class globalButtonManager : MonoBehaviour {
     public void exit()
     {
         Application.Quit();
+    }
+
+    public void setScrollAtBeginning(RectTransform content)
+    {
+        content.position = Vector3.zero;
     }
 }

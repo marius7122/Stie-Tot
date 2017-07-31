@@ -45,6 +45,7 @@ public class InfoWindowController : MonoBehaviour {
         FSController.appear();
 
         //dezactivam butonul "inapoi la meniul principal"
-        GameObject.Find("Canvas").SetActive(false);
+        GameObject.Find("UI").SetActive(false); 
     }
+
 }

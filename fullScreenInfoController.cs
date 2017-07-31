@@ -12,6 +12,7 @@ public class fullScreenInfoController : MonoBehaviour
     public Text informatii;
 
     public GameObject backToMainMenuCanvas;
+    public GameObject content;          //contentul de la scroll view
 
     private Animator anim;
 
@@ -21,7 +22,7 @@ public class fullScreenInfoController : MonoBehaviour
     }
 
     //atribuie valori campurilor text
-    public IEnumerator setText(string Titlu,string Autor,string An,string Informatii)
+    public IEnumerator setText(string Titlu, string Autor, string An, string Informatii)
     {
         titlu.text = Titlu;
         autor.text = "Autor: " + Autor;
@@ -52,4 +53,16 @@ public class fullScreenInfoController : MonoBehaviour
     {
         anim.SetBool("visible", true);
     }
+
+    //pentru ca ferastra sa dispara
+    public void dissapear()
+    {
+        anim.SetBool("visible", false);
+    }
+
+    public void setScrollAtBeginning()
+    {
+        content.GetComponent<RectTransform>().position = Vector3.zero;
+    }
+
 }

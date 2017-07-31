@@ -18,7 +18,7 @@ public class libInstanceManager : MonoBehaviour {
         ReadXmlFile();
         instantiateItems();
 
-        StartCoroutine(fixUnityBug("Viewport"));
+        //StartCoroutine(fixUnityBug("Viewport"));
     }
 
 
@@ -40,6 +40,7 @@ public class libInstanceManager : MonoBehaviour {
             GameObject x = Instantiate(itemPrefab);
 
             x.transform.parent = gameObject.transform;
+            x.transform.localScale = new Vector3(1f, 1f, 1f);
 
             itemButtonScript scr = x.GetComponent<itemButtonScript>();
 
@@ -48,7 +49,8 @@ public class libInstanceManager : MonoBehaviour {
         }
     }
 
-    public static IEnumerator fixUnityBug(string toFind)
+
+    public static IEnumerator fixUnityBug2(string toFind)
     {
         GameObject x = GameObject.Find(toFind);
 

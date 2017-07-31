@@ -51,6 +51,12 @@ public class itemButtonScript : MonoBehaviour {
 
         //atribuim valori tabloului cu informatii
         StartCoroutine(FSController.setText(myItem.titlu, myItem.autor, myItem.an, myItem.detalii));
+
+        //setam scroll view-ul la inceput
+        FSController.setScrollAtBeginning();
+
+        //pornim animatia
+        FSController.appear();
     }
 
 }

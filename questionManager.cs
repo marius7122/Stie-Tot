@@ -10,29 +10,44 @@ public class questionManager : MonoBehaviour {
 
     public Text intrebare;
 
+    //UI pentru ecranul de sfarsit
     public GameObject end;
+    //UI pentru intrebari
+    public GameObject intrebari;
 
     //raspunsurile posibile
+    [Header("Cele 4 variante de raspuns ariantele de raspunsuri")]
     public Text[] r;
     public Button[] b = new Button[4];
     public Image[] bImg = new Image[4];
 
+    [Header("Butoanele verifica, next")]
     public GameObject verificaButon;
     public GameObject nextButon;
 
     //intrebarile
+    [Header("Lista de intrebari")]
     public List<question> q = new List<question>();
 
-    public question actQ;
+    //[Header("Intrebarea Actuala")]
+    private question actQ;
 
-    public int selected = -1;
+    private int selected = -1;  //care varianta de raspuns a fost selectata
 
-    public int points;
-    private bool[] viz = new bool[100];
-    private int nrIntrebari = 15;
-    public int nrIntrebariPuse = 0;
+    private int points;         //numarul de puncte acumulate
+    //private bool[] viz = new bool[100];     //daca s-a pus intrebarea i => viz[i] = true
+    private int nrIntrebari = 16;           //cate antrebari sunt
+    private int nrIntrebariDePus = 10;
+    private int nrIntrebariPuse = 0;         //cate intrebari s-au pus
+    private int[] order;
+
+    //culorile pentru butoane: apasat, liber, raspunsul corect, raspuns gresit
+    [Header("Culorile pentru butoane")]
     public Color pressed;
     public Color relased;
+    public Color corectCol;
+    public Color gresitCol;
+    public Color blinkColor;
 
     private void Awake()
     {
@@ -40,8 +55,12 @@ public class questionManager : MonoBehaviour {
 
         loadNext();
 
+        setShuffleOrder();
+
     }
 
+
+    //citeste fisierul XML cu intrebarile
     void readXmlFile()
     {
         XmlSerializer serializer = new XmlSerializer(typeof(List<question>));
@@ -51,20 +70,31 @@ public class questionManager : MonoBehaviour {
         StringReader reader = new StringReader(XmlText.text);
 
         q = serializer.Deserialize(reader) as List<question>;
+
+        //Debug.Log("numar de intrebari = " + q.Count);
+
     }
 
     public void verifica()
     {
+        //Debug.Log("verifica!");
 
-        if(selected != -1)
+        StartCoroutine(blinkAndCheck());
+    }
+
+    IEnumerator blinkAndCheck()
+    {
+        if (selected != -1)
         {
-            colorButton(actQ.corect - 1, Color.green);
+            yield return StartCoroutine(blink());
+
+            colorButton(actQ.corect - 1, corectCol);
 
             if (selected == actQ.corect - 1)
                 points++;
 
             else
-                colorButton(selected, Color.red);
+                colorButton(selected, gresitCol);
 
             verificaButon.SetActive(false);
 
@@ -75,32 +105,72 @@ public class questionManager : MonoBehaviour {
         selected = -1;
     }
 
+    IEnumerator blink()
+    {
+        int selectedButton = selected;
+
+        //Debug.Log("selected = " + selected);
+
+        float blinkTime = 0.4f;
+
+        for (int i = 0; i < 3; i++)
+        {
+            //Debug.Log("blink");
+
+            bImg[selectedButton].color = blinkColor;
+            yield return new WaitForSeconds(blinkTime);
+
+            bImg[selectedButton].color = pressed;
+            yield return new WaitForSeconds(blinkTime);
+        }
+
+        yield return new WaitForSeconds(blinkTime);
+
+    }
+    
+    //cauta intrebarea urmatoare
     public void loadNext()
     {
-        Debug.Log("urmatorul!!!");
-
-        nrIntrebariPuse++;
-
-        if(nrIntrebariPuse == 11)
+        if (nrIntrebariPuse == 0)
+            setShuffleOrder();
+        
+        if(nrIntrebariPuse == nrIntrebariDePus)
         {
             loadFinal();
             return;
         }
 
-        int next = (int)Random.Range(0, nrIntrebari);
+        nrIntrebariPuse++;
 
-        while (viz[next] == true)
-            next = (int)Random.Range(0, nrIntrebari);
 
-        Debug.Log(next);
+        int next = order[nrIntrebariPuse];
+
 
         actQ = q[next];
 
-        viz[next] = true;
-
         loadQ();
     }
+    
+    void setShuffleOrder()
+    {
+        order = new int[nrIntrebari + 2];
 
+        for (int i = 1; i <= nrIntrebari; i++)
+            order[i] = i;
+
+        for (int i = 1; i <= nrIntrebari; i++)
+        {
+            int sch = (int)Random.RandomRange(1, nrIntrebari - i + 1);
+
+            int aux = order[sch];
+            order[sch] = order[nrIntrebari - i + 1];
+            order[nrIntrebari - i + 1] = aux;
+
+        }
+        
+    }
+
+    //incarca intrebarea urmatoare
     void loadQ()
     {
         ResetButtons();
@@ -113,12 +183,13 @@ public class questionManager : MonoBehaviour {
         r[3].text = actQ.r4;
     }
 
+    //incarca ecranul final (dupa ce toate intrebarile au fost puse)
     void loadFinal()
     {
-
+        intrebari.SetActive(false);
         end.SetActive(true);
 
-        GameObject.Find("text final").GetComponent<Text>().text = "Felicitari! Ai obtinut " + points + " puncte din 10";
+        GameObject.Find("text final").GetComponent<Text>().text = "Felicitari! Ai obtinut " + points + " puncte din " + nrIntrebariDePus;
 
         gameObject.SetActive(false);
     }
